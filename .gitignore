@@ -1,0 +1,17 @@
+.idea
+db.sqlite3
+*.pyc
+__pycache__
+yolo/migrations
+pybo/migrations
+common/migrations
+mysite.pem
+logs
+test
+media/yolo/answer
+media/yolo/question
+media_backup
+*.cmd
+*.txt
+*.mwb
+*.sh

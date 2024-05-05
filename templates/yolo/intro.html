@@ -1,0 +1,118 @@
+{% extends 'yolo_base.html' %}
+{% load yolo_filter %}
+{% block content %}
+<div class="container my-3 center">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                프로젝트 개요 #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>■ 프로젝트 개발환경
+                    : Python + Django + PostgreSQL</p>
+                    
+                    <p>■ 이미지 Detection 모델
+                    : YOLO v8</p>
+                    
+                    <p>■ 이미지 데이터 확보방법
+                    : AI Hub(<a href='https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71447' target='_blank'>선박 도장 품질 데이터</a>)</p>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    프로젝트 완료보고서 #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_1.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_2.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_3.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_4.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_5.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_6.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_7.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_8.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_9.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_10.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_11.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_12.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_13.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_14.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_15.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_16.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_17.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_18.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_19.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_20.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_21.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_22.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_23.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_24.jpg"></p>
+                    <p><img class="img-fluid" src="../media/yolo/images/end_report/end_report_25.jpg"></p>  
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    테스트 데이터 다운로드 #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p><strong>구분할 수 있는 불량의 종류는 6개입니다. 각각의 클래스의 데이터를 다운로드하여 요청을 등록하면 Yolov8 모델을 통해 예측한 결과를 확인하실 수 있습니다.</strong></p>
+                    <p><a href="../media/yolo/images/testdata/01_TS_도막손상_도막떨어짐.zip">01_TS_도막손상_도막떨어짐.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/02_TS_도막손상_스크래치.zip">02_TS_도막손상_스크래치.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/03_TS_도막손상_용접손상.zip">03_TS_도막손상_용접손상.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/04_TS_도장불량_균열.zip">04_TS_도장불량_균열.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/05_TS_도장불량_도막분리.zip">05_TS_도장불량_도막분리.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/06_TS_도장불량_부풀음.zip">06_TS_도장불량_부풀음.zip</a></p>
+                    <!--p><a href="../media/yolo/images/testdata/07_TS_도장불량_워터스포팅.zip">07_TS_도장불량_워터스포팅.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/08_TS_도장불량_이물질포함.zip">08_TS_도장불량_이물질포함.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/09_TS_도장불량_핀홀.zip">09_TS_도장불량_핀홀.zip</a></p>
+                    <p><a href="../media/yolo/images/testdata/10_TS_도장불량_흐름.zip">10_TS_도장불량_흐름.zip</a></p-->
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    프로젝트 시연방법 #4
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>■ 1. 로그인</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 우측상단의 로그인 버튼을 통해 로그인</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 계정이 없다면 로그인 버튼클릭후 계정 생성</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 계정생성시 이메일주소를 실제 메일을 받을 수 있는 이메일을 적어주세요.</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 모델이 예측후 결과를 이메일로 전송해 드립니다.</p>
+                        
+                    <p>■ 2. 게시판 리스트</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 화면하단의 요청등록 버튼 클릭</p>
+
+                    <p>■ 3. 요청 등록</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 제목, 내용에 적당한 내용을 입력후</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : #3에서 다운로드 받은 이미지를 선택</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 요청등록 버튼 클릭</p>
+                    
+                    <p>■ 4. 결과 확인</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 게시판 리스트 화면에서 등록한 제목옆에 1이 표시되면 답변이 등록된 것</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 1) 제목을 클릭해서 예측결과 확인</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 2) 회원가입시 등록한 이메일에 접속후 예측결과와 동일한 내용의 메일이 왔는지 확인</p>
+                    
+                    <p><a href="http://52.79.44.164/yolo/" target='_blank'>프로젝트 시연</a></p>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+{% endblock %}    
