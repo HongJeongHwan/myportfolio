@@ -1,0 +1,87 @@
+{% extends 'mini_base.html' %}
+{% load yolo_filter %}
+{% block content %}
+<div class="container my-3 center">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                프로젝트 개요 #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>■ 프로젝트 개발환경
+                    : Python + Streamlit</p><p>
+                    <img src="../../static/images/yolo/intro/python-logo.png" height="70">
+                    <img src="../../static/images/yolo/intro/streamlit-logo.jpeg" height="70"></p>
+                    <p>■ 데이터 분석을 위한 이미지 출처
+                    : <a href='https://data.seoul.go.kr/' target='_blank'>서울 열린데이터 광장</a></p>
+                    <p><img src="../../static/images/yolo/intro/seoulopen-logo.png"></p>
+                    <p>■ Deploy 서버환경
+                        : Streamlit Share</p><p>
+                        <img src="../../static/images/yolo/intro/streamlit-logo.jpeg" height="70"></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    프로젝트 완료보고서 #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_1.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_2.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_3.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_4.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_5.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_6.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_7.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_8.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_9.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_10.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_11.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_12.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_13.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_14.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_15.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_16.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_17.jpg"></p>
+                    <!--p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_18.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_19.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_20.jpg"></p>
+                    <p><img class="img-fluid" src="../../static/images/mini/end_report/bike_endreport_21.jpg"></p-->                    
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    프로젝트 시연방법 #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>■ contents</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 분석개요 보기 클릭해보기</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 날짜 및 시작_대여소 클릭해서 변경해보기</p>
+                        
+                    <p>■ 지리적 분석</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 따릉이 정보중 NaN 데이터 처리방법 클릭해보기</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 지리적 분석을 위해 따릉이 대여소 데이터 수집 클릭해보기</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp : 동별 대여소 위치확인 클릭해보기</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - 날짜 및 시작_대여소_동명 변경해보기</p>
+                    
+                    <p>&nbsp&nbsp&nbsp&nbsp : 활성화/비활성화 동 추출 클릭해보기</p>
+                    
+                    <p>&nbsp&nbsp&nbsp&nbsp : 지리적 분석의 결과 클릭해보기</p>
+
+                    <p><a href="https://bit.ly/4bm3zbV" target='_blank'>프로젝트 시연</a></p>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+{% endblock %}

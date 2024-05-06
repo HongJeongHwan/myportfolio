@@ -38,13 +38,18 @@ def yolo_index(request):
     context = {'yolo_question_list': page_obj, 'page': page, 'kw': kw, 'so': so}
     return render(request, 'yolo/yolo_question_list.html', context)
 
+
+def yolo_detail(request, yolo_question_id):
+    yolo_question = get_object_or_404(YQuestion, pk=yolo_question_id)
+    context = {'yolo_question':yolo_question}
+    return render(request, 'yolo/yolo_question_detail.html', context)
+
 # yolo 프로그램 개요 설명
 def intro(request):
     # yolo_question = get_object_or_404(YQuestion, pk=yolo_question_id)
     # context = {'yolo_question':yolo_question}
     return render(request, 'yolo/intro.html')
 
-def yolo_detail(request, yolo_question_id):
-    yolo_question = get_object_or_404(YQuestion, pk=yolo_question_id)
-    context = {'yolo_question':yolo_question}
-    return render(request, 'yolo/yolo_question_detail.html', context)
+# KDT_mini : 별도의 앱을 만들기가 애매해서 yolo에서 처리
+def intro_mini(request):
+    return render(request, 'yolo/intro_mini.html')

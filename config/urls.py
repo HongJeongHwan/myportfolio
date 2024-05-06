@@ -20,9 +20,10 @@ from yolo.views import yolo_base_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('common/', include('common.urls')),
     path('pybo/', include('pybo.urls')),
     path('yolo/', include('yolo.urls')),
-    path('common/', include('common.urls')),
+    # path('mini/intro', 'www.naver.com'),
     path('', yolo_base_views.yolo_index, name='index'),
 ]
 

@@ -10,6 +10,7 @@ urlpatterns = [
     # path('', views.index, name='index'),
     # base_views.py
     path('intro/', yolo_base_views.intro, name='intro'),
+    path('intro_mini/', yolo_base_views.intro_mini, name='intro_mini'),
     path('', yolo_base_views.yolo_index, name='yolo_index'),
     path('<int:yolo_question_id>/', yolo_base_views.yolo_detail, name='yolo_detail'),
     # question_views.py
